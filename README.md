@@ -1,2 +1,3 @@
 # landing_page
-Odin Project flex landing_page project
+Odin Project flexbox landing_page project
+I hope no one is actually looking at this...
