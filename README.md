@@ -1,3 +1,3 @@
 # landing_page
 Odin Project flexbox landing_page project
-I hope no one is actually looking at this...
+Theorectical webpage for an Australian political party run by dogs.
