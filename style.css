@@ -1,3 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
 .container {
     display: flex;
     flex-direction: column;
@@ -5,13 +13,22 @@
 }
 
 .div1, .div2, .div3, .div4, .footer {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.div1, .div2, .div3 {
+    flex-basis: 400px;
 }
 
 .div1 {
-    border: 3px solid black;
-    background-color: rgb(92, 243, 92);
+    background-color: #1F2937;
+}
+
+.logo {
+    font-size: 24px; 
+    color: #f9faf8;
+    font-weight: 800;
 }
 
 .header {
@@ -19,6 +36,7 @@
     height: 100px;
     align-items: flex-start;
     justify-content: space-between;
+    padding-top: 1em;
 }
 
 ul {
@@ -31,7 +49,8 @@ a {
     text-decoration: none;
     font-weight: bolder;
     padding-right: 10px;
-    color: white;
+    color: #E5E7EB;
+    font-size: 18px;
 }
 
 .lower_div1 {
@@ -41,29 +60,42 @@ a {
 }
 
 .lower_div1_header {
+    font-size: 48px; 
+    color: #f9faf8;
+    font-weight: 800;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding-right: 40px;
 }
 
+p {
+    font-size: 18px;
+    color: #e5E7eb;
+}
+
 .lower_div1 img {
-    width: 600px;
+    width: 500px;
 }
 
 .div2{
     border: 3px solid black;
     display: flex;
     flex-direction: column;
-    flex-basis: 400px;
 }
 
 .div2_header {
     align-self: center;
+    font-weight: 800;
+    font-size: 36px;
+    color: #1F2937;
 }
 
 .middle {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     border: 3px solid black;
 }
 
@@ -73,25 +105,58 @@ a {
     height: 150px;
 }
 
-
 .div3{
-    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
     border: 3px solid black;
     justify-content: center;
+    align-items: center;
 }
 
 .quote {
     word-wrap: break-word;
+    width: 100%;
     border: 3px solid black;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
+}
+
+.quote_man {
+    border: 3px solid black;
+    align-self: flex-end;
 }
 
 .div4{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     border: 3px solid black;
+    flex-basis: 200px;
+}
+
+.blue {
+    display: flex;
+    flex-basis: auto;
+    background-color: #3882f6;
+    padding: 50px;
+}
+
+.action {
+    border: 3px solid black;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+/*for both buttons */
+
+.join, .join2 {
+    background-color: #3882f6;
+    color: white;
 }
 
 .footer{
     border: 3px solid black;
+    flex: 0 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
